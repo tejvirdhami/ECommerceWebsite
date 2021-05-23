@@ -1,0 +1,475 @@
+COMMENT THE CODE.
+USE WORKING METHODOLOGY.
+
+-------------------------------1/14/2021----------------------------------
+XAMPP
+
+X- coss platform(Windows, Linux, MacOS)
+A- Apache (web server, it serves files to browser)
+M- My sql/ MariaDB(SERVER)
+P- Php (Server side scripting language)
+P- Pearl(Scripting language)
+
+
+HTML
+
+PHP:
+if db generate HTML
+
+PHP(PHP Hypertext Processor): 50% + 75%
+ASP(Microsoft)
+JSP(Oracle)
+
+tracert www.google.ca(To track computers)
+
+NEVER USE MD5
+
+------------------------TO CHECK HASH----------------------
+C:\fciv\fciv.exe
+
+then blast in the path of the downloaded application
+C:\fciv\fciv.exe -sha1 "C:\users\Tejvir Dhami\Downloads\VSCodeUserSetup-x64-1.52.1.exe"
+
+Go to the Page>source code> find the SHA1 code we copied.
+If the code matches Then we are good to install
+Otherwise, its not safe.
+
+---------------------XAMPP-------------------------
+1) ip adress
+2) port
+
+80:HTTP (standard website) everyone can see contents
+443:HTTPS(secure) no one can see contents, it is encrypted.
+
+80:httpd.conf
+443:httpd-ssl.conf
+
+localhost -> 127.0.0.1
+
+80: 8088 (httpd.conf) daemon means service
+
+443: 4433 (htppd-ssl.conf)
+
+Windows Printer Spooling Service
+
+
+
+
+
+
+--------------------------WEEK 2-----------------------
+Windows File System
+A: It was rederved for 5 1/4 inch Floppy Disk
+B: It was rederved for 4 1/2 inch Floppy Disk
+C: HDD
+D: DVD Drive
+E: USB Key
+F:
+
+
+26 drive letters
+
+Absolute Path(complete) : Never use absolute path in a website
+
+C:\windows\myfile.txt
+C:\windows\TD\myfile2.txt
+OR
+C:/windows/TD/myfile2.txt(it will work in windows)
+
+
+How to recognixe absolute path?
+A:\
+X:\
+Always starts with a drive letter
+
+
+
+Relatuve Path(relative to the current working Folder)
+
+.. : previous folder
+.  : current folder
+
+cd .. (Previous folder)
+cd ..\Users\TD
+C:\
+
+
+
+Other file Systems
+
+/ is used(instad of \) to separate folders
+
+Linux, Unix, MacOS, Android, Website
+
+
+Absolute Path:
+/ : root folder, the folder contains all other sub folders
+In Linux absolute path starts with a /
+
+
+
+C:\xampp\htdocs\ : public folder
+C:\xampp\htdocs\cars\index.html
+
+always use relative path so that functionality is maintained by everyone.
+
+----------------------------------------------
+Create a folder in c:\xampp\htdocs\original\
+copy all files into htdocs
+then access via browser.
+
+PHP is a module for apache!
+
+1.Go to file explorer
+2.Click on view
+3.check the extensions option to make sure all extensions are visible.
+
+----------------------ENCODING---------------------------
+1 byte = 8 bit
+
+00000000
+11111111
+
+a = 00100100
+b = 00100101
+
+UNICODE
+
+4 bytes = 32 bits
+
+a = 00000000 00000000 00000000 11000101
+b = 00000000 00000000 00000000 11000111
+
+--------------------------------
+
+UTF-8
+
+M = 00100100 (1 byte)
+O = 00100101
+é 
+
+
+
+
+---------------------------------CHECHKSUM---------------------------------------------------
+
+rhash/rhash.exe --sha512 "C:\users\Tejvir Dhami\Downloads\Apache-NetBeans-12.2-bin-windows-x64.exe
+
+
+C:\rhash/rhash.exe --sha512 "C:\users\Tejvir Dhami\Downloads\Apache-NetBeans-12.2-bin-windows-x64.exe"
+
+Use the rhash to verify netbeans.
+If it matches.
+Install it.
+
+---------------------------------22 Jan 2021------------------------------------------
+Handle UTF-8 characters
+
+1. Make sure the file uses UTF-8 as default.
+2. Send network headers BEFORE echoing any text. (Often done automatically o webservers, but make sure you do it yourself)
+Content-Type: text/html; charset=UTF-8
+3. <meta charset="UTF-8"> should be used.
+
+
+
+
+
+#Send network headers before echoing
+header('Content-Type: text/html; charset=UTF-8') 
+
+
+---------------------------------ACCENTS----------------------------
+
+
+::::::::::::::Shift types top
+;;;;;;;;;;;;;;key alone BOTTOM
+~~~~~~~~~~~~ ALT GR (Right to spacebar)
+
+ALT+Numpad
+ALT+65
+A
+
+ALT+66
+B
+
+ALT+130
+é
+
+CTRL + SHIFT + DOWN For duplicating a line
+
+
+
+----------------------DEBUGGING THE VARIABLES------------------------------
+
+#declare constants
+define("FOLDER_IMAGES", "images/");
+define("PICTURE_MUSTANG",FOLDER_IMAGES . "mustang.jpg");
+define("PICTURE_AUDI",FOLDER_IMAGES . "audi.jpg");
+
+
+
+
+#declare global variables
+$name = "LaSalle";
+$age = 30;
+$lastname = "";
+
+
+$operatingSystem = "Linux";
+        
+        echo "My preferred OS is $operatingSystem"; #it interprets the variable
+
+Single quotes is entirely different thing!
+
+
+
+-----------------------------WEEK 3--------------------------------
+
+
+$name = "Torvalds";
+strlen($name)
+
+1. Create a variable with your firstname
+2. Place the length of fname into another variable
+3. display a sentence saying "The length of firstname is:"
+4. Make sure firstname is not empty and doesnot contain more than 9 characters
+5. Display a message accordningly.
+
+
+if($var == 2)
+	echo"This is two";
+else
+	echo "This is not two";
+
+We used mb before strlen in order to deal with accents. Mb means multi byte
+mb_strlen
+
+
+To print everything after the given character
+substr (Full string, start) 
+
+To print everything Between the two given characters
+substr (Full string, start, end)
+
+
+PROD#123
+
+
+
+-POSITION starts at 0
+-LENGTH starts at 1
+
+
+
+http://google.ca/?search=anything
+https://google.cag
+ftp://localhost/myfolder
+
+
+
+str_replace(search,replace, completestring)
+1.) Replace HTML with Hypertext Markup Language
+2.) Replace XHTML with Extensible Hypertext Markup Language
+
+
+---------------------------------------------------WEEK 3 Class 2--------------------------------------
+Validate the plane tickets
+you only need to validate number of tickets
+Number of tickets should never be 50.
+
+
+
+/*
+(int)
+(integer)
+$number = intval("123")
+settype()
+*/
+
+
+
+
+---------------------------------------------------WEEK 4 Class 1--------------------------------------
+#user may enter many spaces
+
+
+
+---------------------------------------------------WEEK 4 Class 2--------------------------------------
+Do the project with all the guidelines
+Commit the git with student number.
+
+BLACK: saved correctly in git!
+
+1. Create empty project
+2. Select team>git>initialise repository
+3. Make sure to select corret folder. if bot browse select
+4. At the end of every modification, commit it
+5. Add the comments!
+
+
+Use sigle quotes if you previously used double quotes in the string.
+or
+Use double quotes if you previously used single quotes in the string.
+
+if you are using double quotes two times. Use escape Character \
+
+#escape character
+# preceed it with a \
+# \/
+# \"
+# \'
+
+
+function name(parameter)
+        {
+            #display a message
+	}
+functionname("TD");
+ 
+
+--------------------------------------------WEEK 5(10 FEB)------------------------------------
+php.ini file:date.timezone=Europe/Berlin              
+ 
+#    1)   America/Toronto           
+#    2) stop/start Apache   so it will use the LATEST values of the php.ini file
+#    3) var_dump(new DateTime("now");     
+
+
+
+function tripleNumber($number)
+     {
+         $triple = $number * 3;
+         return $triple;
+#Return one way or the other.
+         #return $number * 3;
+     }
+     
+#We need a variable to store and display the result
+     $total = tripleNumber(10);
+
+
+#Always round to two decimals.
+100: tax is 14.975. Always round it to 14.98$
+
+
+--------------------------------------------WEEK 5(12 FEB)------------------------------------
+#USE FUNCTIONS TO CREATE HEADER AND FOOTER INSTEAD OF WRITING DOWN EVERYTIME
+
+<?php
+#open doctype
+function createPageHeader()
+{
+    #echo some HTML code
+    ?><!DOCTYPE html>
+    <html> <head> <meta charset="UTF-8"> <title></title> </head> <body>  
+    <?php
+}
+#create page footer
+function createPageFooter()
+{
+    ?> </body> </html>
+    <?php
+}
+
+#-----------------------DYNAMIC DATE------------------------------------
+   Copyright Tejvir Dhami <?php echo date("Y"); ?>
+
+#----------------By TAG NAME---------------------
+div
+{
+}
+
+#-----------------------By IDS--------------------------
+#id
+{
+}
+
+#-----------------------By class--------------------------
+.class
+{
+}
+
+
+
+
+
+--------------------------------------------WEEK 6(17 FEB)------------------------------------
+
+#USE CONSTANTS to create a common navigation menu
+
+
+
+#To handle titles pass a parameter in the function then echo it.
+<title><?php echo $title?></title>
+
+
+
+#Always make your website compatible with device width
+<meta  name ="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+--------------------------------------------WEEK 6(17 FEB)------------------------------------
+
+------------------------#Create a list----------------------------
+
+function createList($companies)
+{
+    echo "<ol>";
+    for($index=0; $index < count($companies); $index++)
+    {
+        echo '<li>';#open list item
+        echo $companies[$index];
+        echo '</li>';#close list item
+    }    
+    echo"</ol>";
+}
+
+
+-------------------#create combo box------------------------------
+
+
+function createCombobox($brands)
+{
+    #<table>
+    echo "<select name='brands' id='companies-select'>";
+        for($index=0; $index< count($brands); $index++)
+        {
+            echo "<option>$brands[$index]</option>";
+        }
+    echo "</select>";
+}
+
+
+METHOD GET: Everything is saved in browser history.
+Method SET: Nothing is saved in browser history.
+
+
+ALWAYS USE POST METHOD TO Secure privacy.
+
+
+#SuperGLOBAL variables
+# $_POST array containing all the data you posted
+# $_GET array contraining all the data you get
+#  $_REQUEST either $_POST  or $_GET
+
+
+<script>alert("You have been Hacked!")</script>
+
+
+
+-------------------#Week 7 23-24 FEB-----------------------------
+Do the validate to avoid attacks such as Html injection.
+
+POST: used by the code only not in browser history
+GET: used by the code also by URL
+
+
+----------------------#3 MARCH--------------------------------------
+Compile error: Code doesnt start
+
+Runtime error: division by zero
+
+syntax error

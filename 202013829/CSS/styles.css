@@ -1,0 +1,173 @@
+/*#Revision history:
+#
+#DEVELOPER                      DATE                    COMMENTS
+#Tejvir Dhami (202013829)   2021-01-30 Created      NetBeans project and empty folders.
+#Tejvir Dhami (202013829)   2021-02-21 Created      Created Php common functions.
+#Tejvir Dhami (202013829)   2021-02-23 Created      Created Home Page along with others.
+#Tejvir Dhami (202013829)   2021-03-01 Created      Achieved almost 60% of the project.
+#Tejvir Dhami (202013829)   2021-03-03 Created      Finished 80%.
+#Tejvir Dhami (202013829)   2021-03-13 Created      Finished all the Pages 100%*/
+
+
+body
+{
+   background: url("../images/bg.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+.page-logo
+{
+  display: block;
+  max-width: 100%;
+  width: 200px;
+  height: 200px;
+  margin-left: 40px;
+ 
+}
+
+.navigation-menu
+{
+    display: inline;
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    height: 80px;
+    display: flex;
+    margin: 20px;
+}
+
+.navigation-item
+{
+   margin: 20px;
+   color: black;
+   text-decoration: none;
+   font-family: 'Ubuntu', sans-serif;
+}
+
+main
+{
+    color: white;
+}
+
+footer
+{
+position: fixed;
+left: 0;
+bottom: 0;
+height: 30px;
+width: 100%;
+color:#FFFFFF; 
+background-color:black;
+opacity: 50%;
+font-size:1.5em;
+text-align: center;
+line-height:30px;
+}
+
+.home-description
+{
+    font-family: "Avenir-LT-W01_35-Light1475496";
+    text-align: center;
+    line-height: 1.875em;
+    font-size: 16px;
+}
+
+.frm
+{
+    text-align: center;
+    background-color: grey;
+    height: 700px;
+    width: 30%;
+    opacity: 60%;
+    margin-left : 35%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+
+input[type=text], select {
+  width: 40%;
+  padding: 6px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 40%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+.advertising-picture
+{
+    width: 90%;
+    margin-left: 5%;
+       
+}
+
+.validationWarning
+{
+    color: red;
+}
+
+.alert
+{
+    text-align: center;
+    color: red;
+}
+
+.successalert
+{
+    text-align: center;
+    color: green;
+}
+.tbl
+{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width:50%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-left: 25%
+}
+
+.box
+{
+    border: 1px solid #000000;
+    margin: auto;
+    padding: 10px;
+
+}
+
+.orderdescription
+{
+    text-align: center;
+}
+.downloadsheet
+{
+    text-align: center;
+    color: red;
+}
+
+.specialproduct
+{
+   width: 100%;
+   border: 5px solid red; 
+}
